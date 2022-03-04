@@ -419,7 +419,7 @@ async def admins_only(_, message: Message, lang):
 async def set_lang(_, message: Message, lang):
     chat_id = message.chat.id
     lng = extract_args(message.text)
-    if lng != "":
+    if lng /= "":
         langs = [
             file.replace(".json", "")
             for file in os.listdir(f"{os.getcwd()}/lang/")
